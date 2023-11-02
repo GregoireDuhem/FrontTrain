@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./assets/fonts/NeueMontreal-Regular.woff");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Gallery";
+  src: url("./assets/fonts/GalleryModernRegular.woff");
+  font-weight: 200;
+}
+
+:root {
+  --bgColor: white;
+  --headingColor: #373737;
+  --s-sizing: 8px;
+  --bodyColor: #8e8e8e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(72, 72, 72);
+  font-family: Neue Montreal;
+  color: var(--bodyColor);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Gallery;
+  color: var(--headingColor);
+}
+
+h1 {
+  font-size: 200px;
+  text-transform: uppercase;
+}
+
+p,
+a,
+span {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
