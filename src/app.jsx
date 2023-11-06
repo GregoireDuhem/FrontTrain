@@ -1,19 +1,14 @@
-import styled from "styled-components";
 import "./App.scss";
-
-const StyledHome = styled.div``;
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Chichiro from "./pages/chichiro";
 
 function App() {
   return (
-    <StyledHome>
-      <h1>Hello</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        delectus deleniti sed blanditiis nihil ratione ipsa soluta, a
-        consequuntur? Ex, libero. Nemo cumque iure ea ullam? Praesentium at
-        minus aliquam?
-      </p>
-    </StyledHome>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/chichiro" element={<Chichiro />} />
+    </Routes>
   );
 }
 
